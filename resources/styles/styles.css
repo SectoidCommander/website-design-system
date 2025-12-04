@@ -12,7 +12,6 @@
     src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
-
 * {
     border: 1px solid red;
 }
@@ -22,16 +21,33 @@ html {
     font-family: Roboto;
 }
 
+body {
+    background-color: khaki;
+}
+
+main {
+    background-color: floralwhite;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 4px black;
+    margin: 70px 100px;
+}
+
 h1 {
     font-family: "Science Gothic";
     font-size: 2rem;
     text-align: center;
+    margin: 20px;
+}
+
+section {
+    padding: 25px 30px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .color-display {
@@ -71,4 +87,12 @@ h1 {
 
 .yellow {
     background-color: yellow;
+}
+
+.khaki {
+    background-color: rgb(240, 230, 140);
+}
+
+.floral-white {
+    background-color: rgb(255, 250, 240);
 }
