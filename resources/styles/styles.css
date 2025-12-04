@@ -1,0 +1,74 @@
+:root {
+    --text-color-background: rgba(230, 225, 201, .75);
+}
+
+@font-face {
+    font-family: "Science Gothic";
+    src: url("../fonts/Science_Gothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+
+* {
+    border: 1px solid red;
+}
+
+html {
+    font-size: 32px;
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: "Science Gothic";
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.color-display {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.color-display {
+    border: 5px ridge grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.color-display div {
+    font-size: .5rem;
+    background-color: var(--text-color-background);
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid black;
+    max-width: 150px;
+}
+
+.red {
+    background-color:red;
+}
+
+.blue {
+    background-color:blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
