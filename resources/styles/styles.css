@@ -2,6 +2,10 @@
     --text-color-background: rgba(230, 225, 201, .75);
 }
 
+* {
+    border: 1px solid red;
+}
+
 @font-face {
     font-family: "Science Gothic";
     src: url("../fonts/Science_Gothic.ttf") format("truetype");
@@ -12,8 +16,14 @@
     src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
-* {
-    border: 1px solid red;
+@font-face {
+    font-family: "DM Serif";
+    src: url("../fonts/DMSerifText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fascinate";
+    src: url("../fonts/Fascinate-Regular.ttf") format("truetype");
 }
 
 html {
@@ -40,14 +50,31 @@ h1 {
     margin: 20px;
 }
 
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    font-size: .9rem;
+    text-align: center;
+}
+
 section {
     padding: 25px 30px;
 }
 
-.container {
+.color-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.font-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .color-display {
@@ -73,6 +100,15 @@ section {
     max-width: 150px;
 }
 
+.font-display {
+    max-width: 49%;
+}
+
+.font-display p {
+    font-size: .75rem;
+    margin-bottom: 5px;
+}
+
 .red {
     background-color:red;
 }
@@ -95,4 +131,32 @@ section {
 
 .floral-white {
     background-color: rgb(255, 250, 240);
+}
+
+.bolded {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#roboto-font p{
+    font-family: Roboto;
+}
+
+#science-gothic-font p {
+    font-family: "Science Gothic";
+}
+
+#dm-serif p{
+    font-family: "DM Serif";
+}
+
+#fascinate p{
+    font-family: "Fascinate"
 }
